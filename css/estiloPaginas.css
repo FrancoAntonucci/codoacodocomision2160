@@ -1,0 +1,37 @@
+header{
+    background-image: url(../img/20160601174726-negocios-web.jpeg);
+   /* background-repeat: no-repeat;*/
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: -2px;
+    width: 100%;
+    /*opacity: 0;*/
+}
+nav{
+    position: fixed;
+}
+nav ol li{
+    background-color: rgb(16, 130, 230);
+    margin: 5px;
+    display: inline;
+    padding: 10 px;
+}
+h1{
+    background-color: rgba(255, 255,255,0.671);
+    height: 40px;
+    padding: 20px;
+}
+article{
+    background: linear-gradient(rgba(255, 47, 0, 0.145), rgba(0, 51, 0, 0.234), rgba(0, 0, 255, 0.145));
+    width: 90%;
+    margin-left: 5%;
+    height: 700px;
+    padding-top: 150px;
+}
+article h2 {
+    text-align: center;
+    
+
+}
