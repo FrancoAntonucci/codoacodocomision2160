@@ -1,14 +1,23 @@
+body{
+    font-size: 30px;
+    }
+    div{
+        padding: 5px;
+    }
 .rojo{
     background-color: red;
     color: yellow;
     width: 320px;
     height: 320px;
+    border: 1px solid white;
     float: left;
+  
 }
 .negro{
     background-color: black;
     color: white !important;
     width: 320px;
     height: 320px;
+    border: 1px solid white;
     float: left;
 }
