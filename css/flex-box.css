@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+body{
+    overflow: hidden;
+}
+
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+}
+.cuadro{
+    background-color: blueviolet;
+    width: 20%;
+    /*height: 200px;*/
+    
+  /*float: left;
+    border: 80px solid rgb(202, 15, 15);
+    box-sizing: border-box;*/
+
+}
+.cuadro p{
+    font-size: medium;
+}
+.cuadro p::before{
+    content: 'A mi no me pueden copiar';
+}
+.cuadro p::after{
+    content: 'A mi no me pueden copiar';
+}
+.cuadro p::first-letter{
+    color: tomato;
+    background-color: white;
+    padding: 2px;
+}
+footer{
+    background-color: gray;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    color: white;
+
+}
+.letra{
+    font-family: 'Source Sans Pro', sans-serif;
+}

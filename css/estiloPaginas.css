@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+}
+
+
 header{
     background-image: url(../img/20160601174726-negocios-web.jpeg);
    /* background-repeat: no-repeat;*/
@@ -11,12 +16,20 @@ header{
 }
 nav{
     position: fixed;
+    top: 15px;
 }
 nav ol li{
     background-color: rgb(16, 130, 230);
-    margin: 5px;
+    margin: 5px -2px;
     display: inline;
-    padding: 10 px;
+    padding: 15 px;
+}
+nav ol li:hover{
+    /*completar desde el video*/
+}
+nav ol li{
+        text-decoration: none;
+        color: black;
 }
 h1{
     background-color: rgba(255, 255,255,0.671);
@@ -25,13 +38,20 @@ h1{
 }
 article{
     background: linear-gradient(rgba(255, 47, 0, 0.145), rgba(0, 51, 0, 0.234), rgba(0, 0, 255, 0.145));
-    width: 90%;
+    width: 100%;
     margin-left: 5%;
     height: 700px;
     padding-top: 150px;
 }
 article h2 {
     text-align: center;
-    
-
+}
+footer{
+    background-color: gray;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    color: white;
 }
