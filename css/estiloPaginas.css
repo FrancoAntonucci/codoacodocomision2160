@@ -2,6 +2,26 @@
     margin: 0px;
 }
 
+a{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+article h2 {
+    text-align: center;
+}
+
+article{
+    background: linear-gradient(rgba(255, 47, 0, 0.145), rgba(0, 51, 0, 0.234), rgba(0, 0, 255, 0.145));
+    width: 100%;
+    
+    height: 700px;
+    padding-top: 150px;
+}
+
+body{
+    overflow: hidden;
+}
 
 header{
     background-image: url(../img/20160601174726-negocios-web.jpeg);
@@ -14,38 +34,41 @@ header{
     width: 100%;
     /*opacity: 0;*/
 }
-nav{
-    position: fixed;
-    top: 15px;
-}
-nav ol li{
-    background-color: rgb(16, 130, 230);
-    margin: 5px -2px;
-    display: inline;
-    padding: 15 px;
-}
-nav ol li:hover{
-    /*completar desde el video*/
-}
-nav ol li{
-        text-decoration: none;
-        color: black;
-}
+
 h1{
     background-color: rgba(255, 255,255,0.671);
     height: 40px;
     padding: 20px;
 }
-article{
-    background: linear-gradient(rgba(255, 47, 0, 0.145), rgba(0, 51, 0, 0.234), rgba(0, 0, 255, 0.145));
-    width: 100%;
-    margin-left: 5%;
-    height: 700px;
-    padding-top: 150px;
+
+nav{
+    position: fixed;
+    top: 15px;
 }
-article h2 {
-    text-align: center;
+
+nav ol li{
+    background-color: rgb(16, 130, 230);
+    margin: 5px;
+    display: inline;
+    padding: 25 px;
+    opacity: 0.5;
 }
+
+nav ol li:hover{
+    margin: 5px;
+    display: inline;
+    opacity: 1;
+    /*completar desde el video*/
+}
+
+nav ol li a{
+        text-decoration: none;
+        color: black;
+}
+
+
+
+
 footer{
     background-color: gray;
     position: absolute;
@@ -54,4 +77,9 @@ footer{
     text-align: center;
     padding: 15px 0px;
     color: white;
+}
+
+
+li{
+    border-radius: 5px;
 }
