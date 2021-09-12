@@ -4,10 +4,11 @@
 
 a{
     padding: 5px;
+    border-radius: 10px; 
 }
-
 article h2 {
     text-align: center;
+    margin-left: 350px;
 }
 
 article{
@@ -17,34 +18,33 @@ article{
     height: 700px;
     padding-top: 150px;
 }
-
 body{
     overflow: hidden;
 }
 
+h1{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 123, 0, 0.753);
+    height: 40px;
+    padding: 20px;
+}
+
 header{
-    background-image: url(../img/20160601174726-negocios-web.jpeg);
+    background-image: url(../img/cursos-de-reposteria.jpg);
    /* background-repeat: no-repeat;*/
-    height: 150px;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     position: fixed;
     top: -2px;
-    width: 100%;
+    width: 350px;
     /*opacity: 0;*/
-}
-
-h1{
-    background-color: rgba(255, 255,255,0.671);
-    height: 40px;
-    padding: 20px;
 }
 
 nav{
     position: fixed;
     top: 15px;
 }
-
 nav ol li{
     background-color: rgb(16, 130, 230);
     margin: 5px;
@@ -65,20 +65,9 @@ nav ol li a{
         color: black;
 }
 
-
-
-
-footer{
-    background-color: gray;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
-    padding: 15px 0px;
-    color: white;
-}
-
-
 li{
     border-radius: 5px;
+}
+ol{
+    margin-left: 350px;
 }
