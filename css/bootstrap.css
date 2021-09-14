@@ -1,0 +1,16 @@
+body{
+    background-image: url("../img/imagenultrahd.jpg");
+    background-size:80% ;
+    background-repeat:repeat-x ;
+    background-attachment: fixed;
+}
+
+.btn-primary{
+    background-color: chartreuse;
+}
+.btn-primary:hover{
+    background-color: forestgreen;
+}
+.bg-otra{
+    background-color: rgb(97, 34, 139);
+}
