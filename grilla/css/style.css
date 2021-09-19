@@ -1,0 +1,5 @@
+/*para posicionar el texto sobre la imagen eb imagen de css*/
+.position-relative{
+    top: -225px;
+    background-color: blueviolet;
+}
