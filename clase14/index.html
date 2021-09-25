@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./estilos.css">
+
+    <title>Hola Bootstrap</title>
+  </head>
+  <body>
+  
+
+    <!--Inicio de Nav-->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+
+            <img src="../img/20210220_191958.jpg" alt=""> <!--no tengo la imagen logo.final del profe y puse cualquiera-->
+        </a>
+        
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeria</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link " href="#">Disabled</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">✅</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+     <!--fin de Nav-->
+
+     <!--Inicio de slide-->
+
+     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">   
+          <!--revisar como cambiar de tamaño imagenes diferentes-->
+          <img src="../img/20210110_203321.jpg" class="d-block w-100" alt="imagen 1">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/20210124_202943.jpg" class="d-block w-100" alt="imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/20210212_201124.jpg" class="d-block w-100" alt="imagen 3">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/20210220_180047.jpg" class="d-block w-100" alt="imagen 4">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--fin de slide-->
+    <!--inicio de Cards-->
+    <div class="container">
+    <div class="card-group">
+      <div class="card">
+        <img src="./img/Steve.jpg" class="card-img-top" alt="Steve jobs">
+        <div class="card-body">
+          <h5 class="card-title">Steve Jobs</h5>
+          <span class="badge bg-danger">Html</span>
+          <span class="badge bg-primary">Css</span>
+          <span class="badge bg-warning text-dark">Javascript</span>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/Bill.jpg" class="card-img-top" alt="Bill Gates">
+        <div class="card-body">
+          <h5 class="card-title">Bill Gates</h5>
+          <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/ada.jpg" class="card-img-top" alt="Ada">
+        <div class="card-body">
+          <h5 class="card-title">Ada</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--fin de Cards-->
+
+<!--Inicio forms-->
+    <div class="container">
+
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Correo</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@ejemplo.com">
+      </div>
+      <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+      </div>
+    </div>
+
+<!--fin de forms-->
+
+<!--inicio footer-->
+<footer>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+
+            <p>Quienes somos</p>
+
+        </div>
+
+        <div class="col">
+          
+          <p>Diseñado por ...</p>
+
+        </div>
+
+        <div class="col">
+          
+          <p>Contacto: 555-5555</p>
+
+        </div>
+        <div class="col">
+          
+          <p>Conferencias</p>
+
+        </div>
+        <div class="col">
+          
+          <p>Estudiantes</p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+</footer>
+
+
+
+<!--fin footer-->
+
+
+    <!--La grilla comprende 12 "espacios"-->
+
+   
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
