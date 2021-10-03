@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    scroll-behavior: smooth;
+  }
+body {
+    padding-right: 2.7px;
+  }
+.logo {
+    width: 100px;
+    height: 57px;
+  }
+nav {
+    background-color: #353a40;
+    height: 100px !important;
+  }
+.comprar {
+    color: rgba(47, 255, 75, 0.514) !important;
+  }
+.card-img{
+    height: 550px;
+}
+.conf-bsas{
+    margin-top: 200px;
+    margin-right: 100px;
+} 
+.btn-1{
+       margin: 8px;
+  }
+.btn-2{
+    background-color: green;
+    color: white;
+    margin: 8px;
+}
+#losOradores{
+    margin-bottom: 30px;
+}
+#conviértete{
+    text-align: center;
+    margin-top: 10px;
+}
+.col-card{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-text{
+    font-size: 13px;
+}
+.playa {
+    margin-right: 1px;
+    padding-right: 0px;
+    width: 50%;
+  }
+.gris {
+    background-color: #353a40;
+    color: white;
+  }
+.text {
+    font-size: 13px;
+}
+.titulo{
+    text-align: center;
+    padding-top: 30px;
+}
+.puntos{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.btn-enviar{
+    background-color: rgb(121, 223, 74);
+    color: white;
+    margin: 10px;
+    width: 100%
+}
+footer{
+    background: linear-gradient(rgb(11, 25, 51), rgb(17, 39, 80));
+    padding: 20px;
+    height: 80px;
+    text-align: center;
+    align-items: center !important;
+    vertical-align: middle !important;
+    font-size: small;
+    color:white;
+}
