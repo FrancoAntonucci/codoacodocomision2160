@@ -1,14 +1,15 @@
-alert('Soy una ventana emergente!')
+
+/*alert('Soy una ventana emergente!')
             console.log('Hola soy un mensaje en la consola');
             /*Variables*/
             /*palabra reservada, nombre de la variable */
-            var nombre_variable;
+           var nombre_variable;
             /* palabra reservada, nombre de la variable = asignamos el valor*/
-            let otra_variable = "Hola";/*tipo string*/
+           let otra_variable = "Hola";/*tipo string*/
             const PI = 3.1416; /*tipo entero y float*/
-            let num2=18;/*tipo entero*/
-            let hayClases= false;/*booleano*/
-            let terminoLaClase = false;/*booleano*/
+           let num2=18;/*tipo entero*/
+          let hayClases= false;/*booleano*/
+           let terminoLaClase = false;/*booleano*/
             /*tipos undefined, numeros, string, booleanos, objetos, array, chart, funcion */
             console.log(PI*num2);
             console.log(num2+16);
@@ -24,21 +25,21 @@ alert('Soy una ventana emergente!')
             }
             let elemento = document.getElementById("principal");
             /*console.log(elemento);*/
-            elemento.innerHTML="Mi valor para innerHTML";
+            /*elemento.innerHTML="Mi valor para innerHTML";
             elemento.innerHTML+="<p>"+otra_variable+"<p>";
             document.write("<h3 class='text-center bg-primary'>Hola buen día</h3>")
-            document.write("<h3>¿Como están?</h3>")
+            document.write("<h3>¿Como están?</h3>")*/
 
-            if(nombre_variable == undefined){
+          /* if(nombre_variable == undefined){
                 elemento.innerHTML +="Estamos con una variable sin valor definido!"
                 elemento.innerHTML +="<p>Luis Navas</p><p>Barbara</p><p>Damián</p>"
                 
                 elemento.innerHTML +="<p>Debora</p><p>Camila</p>"
-                elemento.style.backgroundColor="Blue"
+               /* elemento.style.backgroundColor="Blue"
                 elemento.style.color="white"
-            }
-            /*
-            let mensaje = prompt("Introduce tu mensaje: ")
+            }*/
+            
+           /* let mensaje = prompt("Introduce tu mensaje: ")
             elemento.innerHTML+= "<h3>" + mensaje + "</h3>";
             elemento.innerHTML+= "<div class=\"alert alert-success\" role=\"alert\">"+mensaje+"</div>";
             */
@@ -66,7 +67,33 @@ alert('Soy una ventana emergente!')
                 elemento.innerHTML="<div class=\"alert alert-success\" role=\"alert\">Debes elegir una opción válida</div>";
                    break;
            }*/
-           let num = parseInt(prompt("ingresa el primer numero"));
-           let num3 = parseInt(prompt("ingresa el segundo numero"));
+          
+          /* let num = parseInt(prompt("ingresa el primer numero"));/*parseFloat si quiero los decimales*/
+          /* let num3 = parseInt(prompt("ingresa el segundo numero"));
 
-           let resultado ="El resultado de la suma de "+ num+" y " + num3 +'es:'+ (num+num3);
+           let resultado ="El resultado de la suma de "+ num+" y " + num3 +'es: '+ (num+num3);
+            /* otra forma*/
+
+          /*  let num = 0, num3=0;
+            num = Number(prompt("ingresa el primer numero"));
+            num3 = Number(prompt("ingresa el primer numero"));
+
+            let resultado ="El resultado de la suma de "+ num+" y " + num3 +'es: '+ (num+num3);*/
+
+            // ARREGLOS (STRINGS) palabra reservada nombreArreglo  = [index0, index1, ...nindex];
+            let alumnos = ["Natalia", "Nicolás","Ramiro","Soledad"];
+//SI QUIERO LOS NOMBRES UNO EN CADA CARD
+
+            for (let a = 0; a < alumnos.length; a++) {
+               elemento.innerHTML+=`
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${alumnos[a]}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+             </div>
+            `;  
+            }
+           
