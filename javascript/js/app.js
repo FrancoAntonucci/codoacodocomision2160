@@ -25,12 +25,12 @@
             }
             let elemento = document.getElementById("principal");
             /*console.log(elemento);*/
-            /*elemento.innerHTML="Mi valor para innerHTML";
+            elemento.innerHTML="Mi valor para innerHTML";
             elemento.innerHTML+="<p>"+otra_variable+"<p>";
             document.write("<h3 class='text-center bg-primary'>Hola buen día</h3>")
-            document.write("<h3>¿Como están?</h3>")*/
+            document.write("<h3>¿Como están?</h3>")
 
-          /* if(nombre_variable == undefined){
+         /* if(nombre_variable == undefined){
                 elemento.innerHTML +="Estamos con una variable sin valor definido!"
                 elemento.innerHTML +="<p>Luis Navas</p><p>Barbara</p><p>Damián</p>"
                 
@@ -81,19 +81,38 @@
             let resultado ="El resultado de la suma de "+ num+" y " + num3 +'es: '+ (num+num3);*/
 
             // ARREGLOS (STRINGS) palabra reservada nombreArreglo  = [index0, index1, ...nindex];
-            let alumnos = ["Natalia", "Nicolás","Ramiro","Soledad"];
-//SI QUIERO LOS NOMBRES UNO EN CADA CARD
+            //SI QUIERO LOS NOMBRES UNO EN CADA CARD
+            //para que aprezcan cada uno en una card uso for para recorrerlo
+                 //pulsando 2 veces }} aparecen las comillas francesas y entre ellas meto el div etc. ademas cuando usamos estas comillas la variable la llamamos ${alumnos[a]} no se usa el ++
 
-            for (let a = 0; a < alumnos.length; a++) {
-               elemento.innerHTML+=`
-            <div class="card" style="width: 18rem;">
+            let alumnos = ["Natalia", "Nicolás","Ramiro","Soledad"];
+            for (let a = 0; a < alumnos.length; a++) { 
+               elemento.innerHTML+=` 
+                <div class="card" style="width: 18rem;">
+                         <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${alumnos[a]}</h5> 
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            `;  
+            }
+            // de esta forma funciona igual que con la de arriba pero es mas simple
+
+            //para agregar nombres se puede hacer de varias formas: a saber,
+
+            alumnos.push('Barbara');
+            alumnos[5]="Luis";//si se la posicion , si no mejor con push
+            alumnos.forEach((a,index)=>{
+                elemento.innerHTML+=`
+                <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">${alumnos[a]}</h5>
+                        <h5 class="card-title">${index +1} ${a}</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
              </div>
-            `;  
-            }
-           
+            `; 
+            }); 
